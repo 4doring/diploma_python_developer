@@ -6,6 +6,7 @@ from apps.users.models import User
 
 class UserSerializer(serializers.ModelSerializer):
     contacts = ContactSerializer(read_only=True, many=True)
+    password = serializers.CharField(write_only=True)
 
     class Meta:
         model = User
