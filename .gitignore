@@ -1,3 +1,5 @@
 .venv
 .env
 __pycache__
+test_*
+.ruff_cache
